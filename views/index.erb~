@@ -56,7 +56,7 @@
 			<div class="alert alert-success">
 				<center><p>
 					This page was opened on: <br>
-				       	<h1><%= Time.now.strftime('%c') %></h1>
+				       	<h1><%= Time.now.utc.new_offset(180).strftime('%c') %> GMT</h1>
 				</p></center>
 			</div>
 		</div>
